@@ -3,12 +3,13 @@ import ListingCard from "./ListingCard";
 
 function ListingsContainer({ listings, removeListing, search }) {
 
-  const listingCards = listings.map((listing) => {
-    return <ListingCard
+  const listingCards = listings.map((listing) => (
+    // return
+    <ListingCard
     key={listing.id}
     listing={listing}
-    removeListing={removeListing} />;
-  });
+    removeListing={removeListing} />
+  ));
 
   return (
     <main>
